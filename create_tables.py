@@ -9,6 +9,7 @@ def drop_tables(cur, conn):
         conn.commit()
 
 
+
 def create_tables(cur, conn):
     for query in create_table_queries:
         cur.execute(query)
